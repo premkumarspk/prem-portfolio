@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #f8f8f8;
+}
+
+:root {
+    --dark-color: #032533;
+    --primary-color: #0b3344;
+}
+
+/*primary Button  */
+
+.primary-btn {
+    background-color: #f8f8f8;
+    color: #02212e;
+    font-size: 18px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 18px;
+    margin-right: 20px;
+
+}
+
+.primary-btn:hover {
+    background-color: var(--dark-color);
+    color: #f8f8f8;
+    transition: linear .4s;
+}
+
+.span-color {
+    color: rgb(83, 255, 241);
+}
+
+
+/* Header SectionStyle */
+
+header {
+    background-color: var(--dark-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+
+}
+
+.logo a {
+    padding: 25px 10px 25px 20px;
+    margin-left: 220px;
+    color: rgb(23, 214, 189);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 24px;
+    text-decoration: underline chocolate;
+    line-height: 25px;
+    letter-spacing: 5px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    padding-right: 200px;
+}
+
+.nav ul li {
+    padding: 5px 20px;
+}
+
+.nav ul li a {
+    font-weight: 500;
+    color: whitesmoke;
+    font-size: 16px;
+    text-decoration: none;
+    position: relative;
+}
+
+/* header hover */
+.nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #f8f8f8;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 200ms ease-in-out;
+}
+
+.nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* end header section  */
+
+/* Profile-section */
+.profile-section {
+    display: flex;
+    padding: 10px 100px 0px 220px;
+    margin: 0;
+    align-items: center;
+    background-color: var(--dark-color);
+}
+
+.profile-section h3 {
+    color: #fff;
+    font-size: small;
+    font-weight: lighter;
+}
+
+.profile-section h1 {
+    color: #fff;
+    letter-spacing: 3px;
+    padding-top: 5px;
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.profile-section p {
+    color: #fff;
+    font-weight: 300;
+    margin-right: 100px;
+    padding: 10px 20px 20px 0;
+    line-height: 25px;
+}
+
+.title-btn {
+    font-size: 18px;
+    padding: 10px;
+    color: #f8f8f8;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 18px;
+    margin-right: 20px;
+}
+
+.title-btn:hover {
+    background-color: #f8f8f8;
+    color: #032c3d;
+    transition: linear .4s;
+}
+
+/* end profile section */
+
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f8f8f8;
+    line-height: 35px;
+    background-color: var(--primary-color);
+    padding-left: 200px;
+}
+
+.about-section div h1 {
+    font-size: 30px;
+    font-weight: 900;
+    padding-bottom: 15px;
+}
+
+.about-section div {
+    margin: 20px 100px 20px 100px;
+}
+
+.about-section div ol {
+    list-style-type: none;
+}
+
+.about-section div ol li {
+    padding-bottom: 5px;
+}
+
+/* About section */
+
+/* Works Section*/
+.works-section {
+    text-align: center;
+    background-color: var(--dark-color);
+    padding: 40px 50px;
+    color: #f8f8f8;
+
+}
+
+.works-section div {
+    justify-content: space-evenly;
+    align-items: center;
+    color: #f8f8f8;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.sub-card {
+    background-color: #114255;
+    border-radius: 20px;
+    height: 200px;
+    width: 250px;
+    padding: 30px 20px 20px 30px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.sub-card:hover {
+    background-color: #061920;
+    transition: ease-out .2s;
+}
+
+.sub-card h3 {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.sub-card p {
+    font-size: 14px;
+    color: #cec8c8;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.logo-icon {
+    color: #18e6d4;
+    font-weight: bold;
+    font-size: 35px;
+    display: block;
+    padding: 15px;
+}
+
+/* work section end */
+
+/* contanct section */
+
+.contact-section {
+    text-align: center;
+    background-color: var(--primary-color);
+    padding: 40px;
+}
+
+.contact-section h4 {
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+
+.contact-section div {
+    padding-bottom: 15px;
+}
+
+.contact-section input,
+textarea {
+    padding: 10px;
+    width: 300px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: #d8d4d4;
+
+}
+
+.btn {
+    background-color: #18e6d4;
+    color: var(--dark-color);
+    padding: 10px;
+    border: none;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #e8ecee;
+    color: #222121;
+    transition: .2s linear;
+}
+
+/* footer*/
+footer {
+    padding: 20px;
+    text-align: center;
+    font-size: 12px;
+    background-color: var(--dark-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
